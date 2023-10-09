@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="css\styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="wrapper">
@@ -32,41 +36,27 @@
         <h1>Booth Registration Form</h1>
         <h2>UNI & TVET FAIR 2023</h2>
 
-        <p>Thank you for your interest in our event!
-            <br>To secure your spot, a registration fee is
-            required. Please find the details below:
-        </p>
-        <ul>
-            <li>Registration Fee Amount: <span class="text-bold">$10</span></li>
-            <li>Payment Deadline: <span class="text-bold">12th October 2023</span></li>
-            <li>Payment Methods: Credit card or bank transfer</li>
-            <li>How to Make Payment: </li>
-            <li>Confirmation of Registration: Your registration will be confirmed via email once we receive the
-                registration fee.</li>
-        </ul>
 
-        <p>Attached file about the previous event : <a
-                href="https://drive.google.com/file/d/16hwzVNF4YxkLTgWpF-JSSEVPx5ek6Tpp/view?usp=sharing"
-                target="_blank">Link</a></p>
-        <p class="small">*Please note that the registration fee is non-refundable unless otherwise stated in our refund
-            policy.
-        </p>
-        <form action="pay.html">
+        <div id="menu2" class="container">
 
-            <label for="school"> Your School Name <span class="star">*</span>
-                <input id="school" name="school" placeholder="Enter your school name" type="text" required /></label>
-            <label for="name">Contact Person Name <span class="star">*</span> <input id="name" name="name" type="text"
-                    placeholder="Enter your name" required /></label>
+            <h3>Scan the QR code to pay</h3>
+
+            <div id="qr"> <img
+                    src="https://www.techopedia.com/wp-content/uploads/2023/03/aee977ce-f946-4451-8b9e-bba278ba5f13.png">
+            </div>
+
+            <form action="success.html">
+                <label for="picture">Upload the payment reference: <input id="payment_screenshot"
+                        class="custom-file-input" type="file" accept="image/png, image/jpg, image/gif, image/jpeg"
+                        name="file" required /></label>
 
 
-            <label for="phone-number">Phone <span class="star">*</span> <input id="phone_number" name="phone-number"
-                    type="tel" placeholder="Your mobile phone number" required /></label>
-
-            <input type="submit" value="Continue" />
-
-        </form>
-
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
     </div>
+
+
 
     <div class="footer">
         ©2022 Sala, Co. All rights reserved. | &nbsp;

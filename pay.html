@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="css\styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="wrapper">
@@ -32,47 +36,46 @@
         <h1>Booth Registration Form</h1>
         <h2>UNI & TVET FAIR 2023</h2>
 
-        <p>Thank you for your interest in our event!
-            <br>To secure your spot, a registration fee is
-            required. Please find the details below:
-        </p>
-        <ul>
-            <li>Registration Fee Amount: <span class="text-bold">$10</span></li>
-            <li>Payment Deadline: <span class="text-bold">12th October 2023</span></li>
-            <li>Payment Methods: Credit card or bank transfer</li>
-            <li>How to Make Payment: </li>
-            <li>Confirmation of Registration: Your registration will be confirmed via email once we receive the
-                registration fee.</li>
-        </ul>
+        <div id="menu1" class="container">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <!-- name on card -->
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <!-- card number -->
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <!-- exp month -->
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            
+            <!-- exp year -->
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2018">
 
-        <p>Attached file about the previous event : <a
-                href="https://drive.google.com/file/d/16hwzVNF4YxkLTgWpF-JSSEVPx5ek6Tpp/view?usp=sharing"
-                target="_blank">Link</a></p>
-        <p class="small">*Please note that the registration fee is non-refundable unless otherwise stated in our refund
-            policy.
-        </p>
-        <form action="pay.html">
-
-            <label for="school"> Your School Name <span class="star">*</span>
-                <input id="school" name="school" placeholder="Enter your school name" type="text" required /></label>
-            <label for="name">Contact Person Name <span class="star">*</span> <input id="name" name="name" type="text"
-                    placeholder="Enter your name" required /></label>
-
-
-            <label for="phone-number">Phone <span class="star">*</span> <input id="phone_number" name="phone-number"
-                    type="tel" placeholder="Your mobile phone number" required /></label>
-
-            <input type="submit" value="Continue" />
-
-        </form>
+            <!-- cvv -->
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="352">
+            <a href="payqr.html" >Pay via QR Code?</a>
+        </div>
+        <input type="submit" value="Submit" />
 
     </div>
+
+    </div>
+   
 
     <div class="footer">
         ©2022 Sala, Co. All rights reserved. | &nbsp;
         <a href="/privacy-policy">Privacy Policy</a>
     </div>
-
+    </div>
 
 
 </body>

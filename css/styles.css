@@ -33,11 +33,14 @@ body {
 }
 
 .form {
-    background-color: #fff;
-    width: 60vw;
+    background-color: #fff !important;
+    width: 60vw !important;
     max-width: 550px;
     min-width: 300px;
     margin: 0 auto;
+    padding: 1em;
+}
+.container {
     padding: 1em;
 }
 
@@ -60,7 +63,7 @@ ul li {
 }
 
 form {
-    width: 60vw;
+    width: 60vw !important;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
@@ -68,13 +71,13 @@ form {
 }
 
 fieldset {
-    border: none;
+    border: none ;
     padding: 2rem 0;
     border-bottom: 3px solid #6c6c83;
 }
 
 fieldset:last-of-type {
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 label {
@@ -86,7 +89,7 @@ input,
 textarea,
 select {
     margin: 10px 0 0 0;
-    width: 100%;
+    width: 100% !important;
     min-height: 2em;
 }
 
@@ -109,7 +112,12 @@ textarea:focus {
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
-
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 input[type="submit"] {
     outline: none;
     background-color: #005bea;
@@ -197,3 +205,4 @@ a:hover {
 .logo a svg {
     color: #fff;
 }
+
