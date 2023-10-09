@@ -42,7 +42,8 @@
             <li>Payment Deadline: 12th October 2023</li>
             <li>Payment Methods: Credit card, bank transfer</li>
             <li>How to Make Payment: </li>
-            <li>Confirmation of Registration: Your registration will be confirmed via email once we receive the registration fee.</li>
+            <li>Confirmation of Registration: Your registration will be confirmed via email once we receive the
+                registration fee.</li>
         </ul>
         <p>Please note that the registration fee is non-refundable unless otherwise stated in our refund policy.
         </p>
@@ -50,15 +51,18 @@
         <form method="get" action="success.html">
             <fieldset>
 
-                <label for="school">Enter Your School Name: <input id="school" name="school" type="text"
+                <label for="school"> Your School Name <span class="star">*</span>
+                    <input id="school" name="school" placeholder="Enter your school name" type="text"
                         required /></label>
-                <label for="name">Contact Person Name: <input id="name" name="name" type="text" required /></label>
+                <label for="name">Contact Person Name <span class="star">*</span> <input id="name" name="name"
+                        type="text" placeholder="Enter your name" required /></label>
 
-                <label for="phone-number">Enter Contact Number: <input id="phone_number" name="phone-number" type="tel"
-                        placeholder="012 345 678" required /></label>
 
-             </fieldset>
-           
+                <label for="phone-number">Phone <span class="star">*</span> <input id="phone_number" name="phone-number"
+                        type="tel" placeholder="Your mobile phone number" required /></label>
+
+            </fieldset>
+
             <fieldset>
                 <label for="profile-picture">Upload the payment reference: <input id="payment_screenshot" type="file"
                         name="file" /></label>

@@ -14,7 +14,11 @@ body {
 
     font-size: 16px;
 }
+.star {
 
+    color :red;
+
+}
 .wrapper {
     background: linear-gradient(270deg, #0acffe, #495aff)
 }
@@ -48,8 +52,9 @@ form {
 
 fieldset {
     border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #6c6c83;
+    padding: 0.5rem 0;
+    border-bottom: 0px solid #6c6c83;
+    
 }
 
 fieldset:last-of-type {
@@ -59,6 +64,8 @@ fieldset:last-of-type {
 label {
     display: block;
     margin: 0.5rem 0;
+    
+     
 }
 
 input,
@@ -67,6 +74,7 @@ select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    padding:0px 10px ;
 }
 
 input,
@@ -79,7 +87,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border: 1px solid #495aff;
+    border: 3px solid #495aff;
     /* border-radius: 0px 2px 2px 0px; */
 }
 
