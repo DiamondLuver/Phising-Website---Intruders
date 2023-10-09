@@ -1,0 +1,132 @@
+html {
+    font-family: Sofia Pro, Kantumruy;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: inherit;
+    /* background-color: #1b1b32; */
+    color: #000000;
+
+    font-size: 16px;
+}
+
+.wrapper {
+    background: linear-gradient(270deg, #0acffe, #495aff)
+}
+
+.form {
+    background-color: #fff;
+    width: 60vw;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1,
+h2{
+    margin: 1em auto;
+    text-align: center;
+}
+p, ul li{
+    text-align: justify; 
+    padding: 0 20px;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #6c6c83;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: #ffffff;
+    border: 1px solid #495aff;
+    border-radius: 5px 5px 5px 5px;
+    color: #000;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #495aff;
+    /* border-radius: 0px 2px 2px 0px; */
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    outline: none;
+    background-color: #005bea;
+    border-color: #005bea;
+    padding: 10px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 7px 39px rgba(0, 0, 0, .3);
+    transition: .4s ease
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 10px 27px rgba(1, 55, 141, .4);
+    transform: translateY(-5px)
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+label select, input{
+    font-family: Sofia Pro, Kantumruy;
+}
+
+a {
+    color: #3b3b4f;
+}
+
+.logo a svg, .footer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.footer {
+    width: 100%;
+    padding-bottom: 50px;
+}
+.footer, .footer a , .logo a svg{
+    color: #fff;
+}
