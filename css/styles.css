@@ -1,10 +1,10 @@
-
 @font-face {
     font-family: 'Sofia Pro';
     font-style: normal;
     font-weight: 400;
     src: url('subset-SofiaProRegular.23916f8.woff') format("woff")
 }
+
 html {
     font-family: 'Sofia Pro';
 }
@@ -19,12 +19,15 @@ body {
 
     font-size: 16px;
 }
+
 .star {
     color: red;
 }
+
 .text-bold {
     font-weight: 700;
 }
+
 .wrapper {
     background: linear-gradient(270deg, #0acffe, #495aff)
 }
@@ -39,17 +42,20 @@ body {
 }
 
 h1,
-h2{
+h2 {
     margin: 1em auto;
     text-align: center;
 }
-p, ul li {
-    
-    text-align: justify; 
+
+p,
+ul li {
+
+    text-align: justify;
     padding: 0 20px;
 }
+
 .small {
-    font-size:15px;
+    font-size: 15px;
     font-style: italic;
 }
 
@@ -127,28 +133,67 @@ input[type="file"] {
     /* display: none; */
     padding: 1px 2px;
 }
-label select, input{
+
+label select,
+input {
     font-family: Sofia Pro, Kantumruy;
 }
 
 a {
-    color: #3b3b4f;
+    color: blue;
     text-decoration: none;
 }
+
 a:hover {
-    color: #4e4eff;
+    color: rgb(151, 151, 245);
 }
 
-.logo a svg, .footer {
+.logo a svg,
+.footer {
     width: 10%;
     display: flex;
     justify-content: center;
     margin: 50px auto;
 }
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Upload Screenshot ';
+    color: #0145b1;
+    font-weight: 200;
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #cdd9ee;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+    border-color:#005bea;
+    cursor: pointer;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
 .footer {
     width: 100%;
     padding-bottom: 50px;
 }
-.footer, .footer a , .logo a svg{
+
+.footer,
+.footer a,
+.logo a svg {
     color: #fff;
 }
