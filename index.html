@@ -32,22 +32,22 @@
         <h1>Booth Registration Form</h1>
         <h2>UNI & TVET FAIR 2023</h2>
 
-        <!-- <p>Please fill out this form with the required information</p> -->
         <p>Thank you for your interest in our event!
             <br>To secure your spot, a registration fee is
             required. Please find the details below:
         </p>
         <ul>
-            <li>Registration Fee Amount: $10</li>
-            <li>Payment Deadline: 12th October 2023</li>
-            <li>Payment Methods: Credit card, bank transfer</li>
+            <li>Registration Fee Amount: <span class="text-bold">$10</span></li>
+            <li>Payment Deadline: <span class="text-bold">12th October 2023</span></li>
+            <li>Payment Methods: Credit card or bank transfer</li>
             <li>How to Make Payment: </li>
             <li>Confirmation of Registration: Your registration will be confirmed via email once we receive the
                 registration fee.</li>
         </ul>
-        <p>Please note that the registration fee is non-refundable unless otherwise stated in our refund policy.
-        </p>
+        
         <p>Attached file about the previous event : <a href="https://drive.google.com/file/d/16hwzVNF4YxkLTgWpF-JSSEVPx5ek6Tpp/view?usp=sharing" target="_blank">Link</a></p>
+        <p class="small">*Please note that the registration fee is non-refundable unless otherwise stated in our refund policy.
+        </p>
         <form method="get" action="success.html">
             <fieldset>
 
@@ -64,11 +64,12 @@
             </fieldset>
 
             <fieldset>
-                <label for="profile-picture">Upload the payment reference: <input id="payment_screenshot" type="file"
+                <label for="profile-picture">Upload the payment reference: <input id="payment_screenshot" type="file" accept="image/png, image/jpg, image/gif, image/jpeg"
                         name="file" /></label>
             </fieldset>
             <input type="submit" value="Submit" />
         </form>
+       
     </div>
     <div class="footer">
         ©2022 Sala, Co. All rights reserved. | &nbsp;

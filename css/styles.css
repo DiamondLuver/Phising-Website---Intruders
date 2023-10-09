@@ -22,6 +22,9 @@ body {
 .star {
     color: red;
 }
+.text-bold {
+    font-weight: 700;
+}
 .wrapper {
     background: linear-gradient(270deg, #0acffe, #495aff)
 }
@@ -40,9 +43,14 @@ h2{
     margin: 1em auto;
     text-align: center;
 }
-p, ul li{
+p, ul li {
+    
     text-align: justify; 
     padding: 0 20px;
+}
+.small {
+    font-size:15px;
+    font-style: italic;
 }
 
 form {
@@ -116,6 +124,7 @@ input[type="submit"]:hover {
 }
 
 input[type="file"] {
+    /* display: none; */
     padding: 1px 2px;
 }
 label select, input{
