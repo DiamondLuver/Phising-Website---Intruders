@@ -122,6 +122,10 @@ label select, input{
 
 a {
     color: #3b3b4f;
+    text-decoration: none;
+}
+a:hover {
+    color: #4e4eff;
 }
 
 .logo a svg, .footer {
